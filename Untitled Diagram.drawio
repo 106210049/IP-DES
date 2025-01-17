@@ -293,7 +293,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="PfB1JGMekuZqj-1WCDl6" name="cipher function">
-    <mxGraphModel dx="819" dy="441" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -496,13 +496,16 @@
         <mxCell id="BQiFuGHi5-RQnbbhtUeE-54" value="S8" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="680" y="520" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="BQiFuGHi5-RQnbbhtUeE-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.51;entryY=-0.055;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="BQiFuGHi5-RQnbbhtUeE-54">
+        <mxCell id="BQiFuGHi5-RQnbbhtUeE-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.51;entryY=-0.055;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" target="BQiFuGHi5-RQnbbhtUeE-54" source="BQiFuGHi5-RQnbbhtUeE-57">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="700.0285714285715" y="470" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="BQiFuGHi5-RQnbbhtUeE-56" value="4 bits" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="680" y="610" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BQiFuGHi5-RQnbbhtUeE-57" value="6 bits" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="440" width="40" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

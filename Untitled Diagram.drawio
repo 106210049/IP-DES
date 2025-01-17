@@ -448,7 +448,7 @@
         <mxCell id="BQiFuGHi5-RQnbbhtUeE-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BQiFuGHi5-RQnbbhtUeE-48" target="BQiFuGHi5-RQnbbhtUeE-49">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BQiFuGHi5-RQnbbhtUeE-48" value="32 bits" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="BQiFuGHi5-RQnbbhtUeE-48" value="32 bit" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="160" y="640" width="520" height="40" as="geometry" />
         </mxCell>
         <mxCell id="BQiFuGHi5-RQnbbhtUeE-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BQiFuGHi5-RQnbbhtUeE-49">

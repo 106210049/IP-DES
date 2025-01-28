@@ -1012,7 +1012,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ZLpz7SYMAokrRkrukBDS-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="ZLpz7SYMAokrRkrukBDS-1" value="DES_CORE" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="320" y="240" width="160" height="200" as="geometry" />
         </mxCell>
         <mxCell id="ZLpz7SYMAokrRkrukBDS-2" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">

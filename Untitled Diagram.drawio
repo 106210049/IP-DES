@@ -1464,7 +1464,7 @@
         <mxCell id="7aBk6Mrt9HWNpJ-ofe-9-53" value="{cin[25:0], cin[27:26]}" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="7aBk6Mrt9HWNpJ-ofe-9-44">
           <mxGeometry x="-50" y="80" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="7aBk6Mrt9HWNpJ-ofe-9-54" value="{cin[26:0], cin[27]}" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="7aBk6Mrt9HWNpJ-ofe-9-44">
+        <mxCell id="7aBk6Mrt9HWNpJ-ofe-9-54" value="{din[26:0], din[27]}" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="7aBk6Mrt9HWNpJ-ofe-9-44">
           <mxGeometry x="-40" y="10" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="7aBk6Mrt9HWNpJ-ofe-9-55" value="" style="group" vertex="1" connectable="0" parent="1">

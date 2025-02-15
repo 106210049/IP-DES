@@ -1392,7 +1392,7 @@
         <mxCell id="7aBk6Mrt9HWNpJ-ofe-9-33" value="{cin[1:0], cin[27:2]}" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="7aBk6Mrt9HWNpJ-ofe-9-24">
           <mxGeometry x="-50" y="80" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="7aBk6Mrt9HWNpJ-ofe-9-34" value="{cin[26:0], cin[27]}" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="7aBk6Mrt9HWNpJ-ofe-9-24">
+        <mxCell id="7aBk6Mrt9HWNpJ-ofe-9-34" value="{cin[0], cin[27:1]}" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="7aBk6Mrt9HWNpJ-ofe-9-24">
           <mxGeometry x="-40" y="10" width="120" height="30" as="geometry" />
         </mxCell>
       </root>

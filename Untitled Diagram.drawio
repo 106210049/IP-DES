@@ -1747,7 +1747,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="CfoQzmrIMpL7SKmkMNep" name="DES_Controller">
-    <mxGraphModel dx="1195" dy="643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="404" dy="217" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2402,6 +2402,44 @@
         </mxCell>
         <mxCell id="pTKc6n0516zHeTymBwW--86" value="encipher_process" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="730" y="740" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pTKc6n0516zHeTymBwW--89" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="880" y="880" as="sourcePoint" />
+            <mxPoint x="880" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTKc6n0516zHeTymBwW--90" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="pTKc6n0516zHeTymBwW--91">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="880" y="880" as="sourcePoint" />
+            <mxPoint x="900" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTKc6n0516zHeTymBwW--91" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.inverter_2" vertex="1" parent="1">
+          <mxGeometry x="910" y="870" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pTKc6n0516zHeTymBwW--95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pTKc6n0516zHeTymBwW--92">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1160" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTKc6n0516zHeTymBwW--92" value="" style="shape=or;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="870" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pTKc6n0516zHeTymBwW--93" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.inverter_2" vertex="1" parent="1">
+          <mxGeometry x="910" y="910" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pTKc6n0516zHeTymBwW--94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="pTKc6n0516zHeTymBwW--91" target="pTKc6n0516zHeTymBwW--92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pTKc6n0516zHeTymBwW--96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.003;entryY=0.842;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="pTKc6n0516zHeTymBwW--93" target="pTKc6n0516zHeTymBwW--92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pTKc6n0516zHeTymBwW--97" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="880" y="920" as="sourcePoint" />
+            <mxPoint x="910" y="920" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

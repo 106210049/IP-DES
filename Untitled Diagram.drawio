@@ -1566,6 +1566,9 @@
         <mxCell id="7aBk6Mrt9HWNpJ-ofe-9-80" value="{din[1:0], din[27:2]}" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="7aBk6Mrt9HWNpJ-ofe-9-70">
           <mxGeometry x="-50" y="60" width="120" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="7aBk6Mrt9HWNpJ-ofe-9-107" value="shift_left_1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="7aBk6Mrt9HWNpJ-ofe-9-70">
+          <mxGeometry x="40" y="-10" width="60" height="30" as="geometry" />
+        </mxCell>
         <mxCell id="7aBk6Mrt9HWNpJ-ofe-9-38" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="540" y="470" as="sourcePoint" />
@@ -1670,6 +1673,15 @@
         </mxCell>
         <mxCell id="7aBk6Mrt9HWNpJ-ofe-9-103" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="760" y="530" width="20" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="7aBk6Mrt9HWNpJ-ofe-9-104" value="clk" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="570" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7aBk6Mrt9HWNpJ-ofe-9-105" value="clk" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="750" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="7aBk6Mrt9HWNpJ-ofe-9-106" value="shift_right_1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="430" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

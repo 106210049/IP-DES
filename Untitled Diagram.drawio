@@ -2015,6 +2015,9 @@
         <mxCell id="nhqbq1hAxSAK7g9mNlAd-76" value="shift_right_1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="730" y="440" width="60" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="nhqbq1hAxSAK7g9mNlAd-77" value="rkey_en" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="395" y="180" width="55" height="20" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

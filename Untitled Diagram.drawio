@@ -1747,7 +1747,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="CfoQzmrIMpL7SKmkMNep" name="DES_Controller">
-    <mxGraphModel dx="1024" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1247" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2271,6 +2271,12 @@
             <mxPoint x="90" as="sourcePoint" />
             <mxPoint x="90" y="25" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="pTKc6n0516zHeTymBwW--103" value="1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pTKc6n0516zHeTymBwW--41">
+          <mxGeometry x="20" y="30" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pTKc6n0516zHeTymBwW--104" value="0" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="pTKc6n0516zHeTymBwW--41">
+          <mxGeometry x="20" y="70" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="pTKc6n0516zHeTymBwW--53" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">

@@ -2976,6 +2976,18 @@
         <mxCell id="BZqpu7vtrdxFjZ1zdiFx-74" value="r_input[31:0]" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="130" y="440" width="60" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="BZqpu7vtrdxFjZ1zdiFx-75" value="clk" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="310" width="20" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="BZqpu7vtrdxFjZ1zdiFx-76" value="clk" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="510" width="20" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="BZqpu7vtrdxFjZ1zdiFx-77" value="rst_n" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="343" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="BZqpu7vtrdxFjZ1zdiFx-78" value="rst_n" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="550" width="30" height="20" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

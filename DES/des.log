@@ -1,0 +1,897 @@
+Initializing gui preferences from file  /home/Khach103/.synopsys_dc_gui/preferences.tcl
+Current time:       Tue Jul 29 17:07:01 2025
+Hostname:           dsac103
+CPU Model:          Intel(R) Core(TM) i5-14500
+CPU Details:        Cores = 20 : Sockets = 1 : Cache Size = 24576 KB : Freq = 1.54 GHz
+OS:                 Linux 5.14.0-570.21.1.el9_6.x86_64
+RAM:                 15 GB (Free   6 GB)
+Swap:                 7 GB (Free   7 GB)
+Work Filesystem:    /home mounted to /dev/mapper/almalinux-home
+Tmp Filesystem:     / mounted to /dev/mapper/almalinux-root
+Work Disk:          397 GB (Free 345 GB)
+Tmp Disk:            69 GB (Free  57 GB)
+
+CPU Load: 2%, Ram Free: 6 GB, Swap Free: 7 GB, Work Disk Free: 345 GB, Tmp Disk Free: 57 GB
+# =============================================
+# Design Compiler Synthesis Script for Counter
+# =============================================
+# Set technology libraries
+set search_path [list . /home/Khach103/Documents/me_labs/liberty]
+. /home/Khach103/Documents/me_labs/liberty
+set link_library [list \
+  /home/Khach103/Documents/me_labs/liberty/saed14rvt_ff0p88v125c.db \
+    /home/Khach103/Documents/me_labs/liberty/saed14rvt_ss0p72vm40c.db \
+   /home/Khach103/Documents/me_labs/liberty/saed14rvt_tt0p8v25c.db \
+]
+/home/Khach103/Documents/me_labs/liberty/saed14rvt_ff0p88v125c.db /home/Khach103/Documents/me_labs/liberty/saed14rvt_ss0p72vm40c.db /home/Khach103/Documents/me_labs/liberty/saed14rvt_tt0p8v25c.db
+set target_library $link_library
+/home/Khach103/Documents/me_labs/liberty/saed14rvt_ff0p88v125c.db /home/Khach103/Documents/me_labs/liberty/saed14rvt_ss0p72vm40c.db /home/Khach103/Documents/me_labs/liberty/saed14rvt_tt0p8v25c.db
+set symbol_library ""
+# Define working library
+define_design_lib WORK -path ./work
+1
+# Read and analyze RTL files
+analyze -library WORK -format verilog [list \
+    /home/Khach103/Documents/me_labs/DES/rtl/DES_core.v \
+    /home/Khach103/Documents/me_labs/DES/rtl/DES_Counter.v \
+    /home/Khach103/Documents/me_labs/DES/rtl/PC1.v \
+    /home/Khach103/Documents/me_labs/DES/rtl/PC2.v \
+    /home/Khach103/Documents/me_labs/DES/rtl/IP.v \
+    /home/Khach103/Documents/me_labs/DES/rtl/E_Permutation.v \
+    /home/Khach103/Documents/me_labs/DES/rtl/S_Box.v \
+    /home/Khach103/Documents/me_labs/DES/rtl/P_Permutation.v \
+    /home/Khach103/Documents/me_labs/DES/rtl/Inverse_IP.v   \
+    /home/Khach103/Documents/me_labs/DES/rtl/DES_DecipherAndKey_Controller.v \
+    /home/Khach103/Documents/me_labs/DES/rtl/DES_Encipher_Controller.v \
+]
+Running PRESTO HDLC
+Compiling source file /home/Khach103/Documents/me_labs/DES/rtl/DES_core.v
+Opening include file /home/Khach103/Documents/me_labs/DES/rtl/PC1.v
+Opening include file /home/Khach103/Documents/me_labs/DES/rtl/PC2.v
+Opening include file /home/Khach103/Documents/me_labs/DES/rtl/IP.v
+Opening include file /home/Khach103/Documents/me_labs/DES/rtl/E_Permutation.v
+Opening include file /home/Khach103/Documents/me_labs/DES/rtl/S_Box.v
+Opening include file /home/Khach103/Documents/me_labs/DES/rtl/P_Permutation.v
+Opening include file /home/Khach103/Documents/me_labs/DES/rtl/Inverse_IP.v
+Opening include file /home/Khach103/Documents/me_labs/DES/rtl/DES_Counter.v
+Opening include file /home/Khach103/Documents/me_labs/DES/rtl/DES_DecipherAndKey_Controller.v
+Opening include file /home/Khach103/Documents/me_labs/DES/rtl/DES_Encipher_Controller.v
+Compiling source file /home/Khach103/Documents/me_labs/DES/rtl/DES_Counter.v
+Warning:  /home/Khach103/Documents/me_labs/DES/rtl/DES_Counter.v:1: Overwriting existing design element 'DES_Counter' with newer version. (VER-64)
+Compiling source file /home/Khach103/Documents/me_labs/DES/rtl/PC1.v
+Warning:  /home/Khach103/Documents/me_labs/DES/rtl/PC1.v:1: Overwriting existing design element 'PC1' with newer version. (VER-64)
+Compiling source file /home/Khach103/Documents/me_labs/DES/rtl/PC2.v
+Warning:  /home/Khach103/Documents/me_labs/DES/rtl/PC2.v:1: Overwriting existing design element 'PC2' with newer version. (VER-64)
+Compiling source file /home/Khach103/Documents/me_labs/DES/rtl/IP.v
+Warning:  /home/Khach103/Documents/me_labs/DES/rtl/IP.v:1: Overwriting existing design element 'IP' with newer version. (VER-64)
+Compiling source file /home/Khach103/Documents/me_labs/DES/rtl/E_Permutation.v
+Warning:  /home/Khach103/Documents/me_labs/DES/rtl/E_Permutation.v:1: Overwriting existing design element 'E_Permutation' with newer version. (VER-64)
+Compiling source file /home/Khach103/Documents/me_labs/DES/rtl/S_Box.v
+Warning:  /home/Khach103/Documents/me_labs/DES/rtl/S_Box.v:1: Overwriting existing design element 'S_Box' with newer version. (VER-64)
+Compiling source file /home/Khach103/Documents/me_labs/DES/rtl/P_Permutation.v
+Warning:  /home/Khach103/Documents/me_labs/DES/rtl/P_Permutation.v:1: Overwriting existing design element 'P_Permutation' with newer version. (VER-64)
+Compiling source file /home/Khach103/Documents/me_labs/DES/rtl/Inverse_IP.v
+Warning:  /home/Khach103/Documents/me_labs/DES/rtl/Inverse_IP.v:1: Overwriting existing design element 'Inverse_IP' with newer version. (VER-64)
+Compiling source file /home/Khach103/Documents/me_labs/DES/rtl/DES_DecipherAndKey_Controller.v
+Warning:  /home/Khach103/Documents/me_labs/DES/rtl/DES_DecipherAndKey_Controller.v:1: Overwriting existing design element 'DES_DecipherAndKey_Controller' with newer version. (VER-64)
+Compiling source file /home/Khach103/Documents/me_labs/DES/rtl/DES_Encipher_Controller.v
+Warning:  /home/Khach103/Documents/me_labs/DES/rtl/DES_Encipher_Controller.v:1: Overwriting existing design element 'DES_Encipher_Controller' with newer version. (VER-64)
+Presto compilation completed successfully.
+Loading db file '/home/Khach103/Documents/me_labs/liberty/saed14rvt_ff0p88v125c.db'
+Information: Using CCS timing libraries. (TIM-024)
+Warning: Error occured in ccs delay calculation, results may not be accurate.
+Loading db file '/home/Khach103/Documents/me_labs/liberty/saed14rvt_ss0p72vm40c.db'
+Loading db file '/home/Khach103/Documents/me_labs/liberty/saed14rvt_tt0p8v25c.db'
+1
+elaborate DES_core -architecture verilog -library WORK
+Loading db file '/home/synopsys/tools/syn/W-2024.09-SP3/libraries/syn/gtech.db'
+Loading db file '/home/synopsys/tools/syn/W-2024.09-SP3/libraries/syn/standard.sldb'
+  Loading link library 'saed14rvt_ff0p88v125c'
+  Loading link library 'saed14rvt_ss0p72vm40c'
+  Loading link library 'saed14rvt_tt0p8v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process in routine 'DES_core' in file
+         /home/Khach103/Documents/me_labs/DES/rtl/DES_core.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|       rn_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  |  69  |
+|       ln_reg        | Flip-flop |  32   |  Y  | N  | None  | None  | N  |  69  |
+|       cn_reg        | Flip-flop |  28   |  Y  | N  | None  | None  | N  |  89  |
+|       dn_reg        | Flip-flop |  28   |  Y  | N  | None  | None  | N  |  89  |
+==================================================================================
+Presto compilation completed successfully. (DES_core)
+Module: DES_core, Ports: 197, Input: 132, Output: 65, Inout: 0
+Module: DES_core, Registers: 120, Async set/reset: 0, Sync set/reset: 0
+Information: Module DES_core report end. (ELAB-965)
+Elaborated 1 design.
+Current design is now 'DES_core'.
+Information: Building the design 'IP'. (HDL-193)
+Presto compilation completed successfully. (IP)
+Module: IP, Ports: 128, Input: 64, Output: 64, Inout: 0
+Module: IP, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module IP report end. (ELAB-965)
+Information: Building the design 'E_Permutation'. (HDL-193)
+Presto compilation completed successfully. (E_Permutation)
+Module: E_Permutation, Ports: 80, Input: 32, Output: 48, Inout: 0
+Module: E_Permutation, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module E_Permutation report end. (ELAB-965)
+Information: Building the design 'S_Box'. (HDL-193)
+
+Statistics for case statements in always block in file
+        '/home/Khach103/Documents/me_labs/DES/rtl/S_Box.v'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|     40     |    auto/auto     | always block at line 39  |
+|     42     |    auto/auto     | always block at line 39  |
+|     62     |    auto/auto     | always block at line 39  |
+|     82     |    auto/auto     | always block at line 39  |
+|    102     |    auto/auto     | always block at line 39  |
+|    125     |    auto/auto     | always block at line 124 |
+|    127     |    auto/auto     | always block at line 124 |
+|    147     |    auto/auto     | always block at line 124 |
+|    167     |    auto/auto     | always block at line 124 |
+|    187     |    auto/auto     | always block at line 124 |
+|    210     |    auto/auto     | always block at line 209 |
+|    212     |    auto/auto     | always block at line 209 |
+|    232     |    auto/auto     | always block at line 209 |
+|    252     |    auto/auto     | always block at line 209 |
+|    272     |    auto/auto     | always block at line 209 |
+|    295     |    auto/auto     | always block at line 294 |
+|    297     |    auto/auto     | always block at line 294 |
+|    317     |    auto/auto     | always block at line 294 |
+|    337     |    auto/auto     | always block at line 294 |
+|    357     |    auto/auto     | always block at line 294 |
+|    380     |    auto/auto     | always block at line 379 |
+|    382     |    auto/auto     | always block at line 379 |
+|    402     |    auto/auto     | always block at line 379 |
+|    422     |    auto/auto     | always block at line 379 |
+|    442     |    auto/auto     | always block at line 379 |
+|    465     |    auto/auto     | always block at line 464 |
+|    467     |    auto/auto     | always block at line 464 |
+|    487     |    auto/auto     | always block at line 464 |
+|    507     |    auto/auto     | always block at line 464 |
+|    527     |    auto/auto     | always block at line 464 |
+|    550     |    auto/auto     | always block at line 549 |
+|    552     |    auto/auto     | always block at line 549 |
+|    572     |    auto/auto     | always block at line 549 |
+|    592     |    auto/auto     | always block at line 549 |
+|    612     |    auto/auto     | always block at line 549 |
+|    635     |    auto/auto     | always block at line 634 |
+|    637     |    auto/auto     | always block at line 634 |
+|    657     |    auto/auto     | always block at line 634 |
+|    677     |    auto/auto     | always block at line 634 |
+|    697     |    auto/auto     | always block at line 634 |
+============================================================
+Presto compilation completed successfully. (S_Box)
+Module: S_Box, Ports: 80, Input: 48, Output: 32, Inout: 0
+Module: S_Box, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module S_Box report end. (ELAB-965)
+Information: Building the design 'P_Permutation'. (HDL-193)
+Presto compilation completed successfully. (P_Permutation)
+Module: P_Permutation, Ports: 64, Input: 32, Output: 32, Inout: 0
+Module: P_Permutation, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module P_Permutation report end. (ELAB-965)
+Information: Building the design 'Inverse_IP'. (HDL-193)
+Presto compilation completed successfully. (Inverse_IP)
+Module: Inverse_IP, Ports: 128, Input: 64, Output: 64, Inout: 0
+Module: Inverse_IP, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module Inverse_IP report end. (ELAB-965)
+Information: Building the design 'PC1'. (HDL-193)
+Presto compilation completed successfully. (PC1)
+Module: PC1, Ports: 120, Input: 64, Output: 56, Inout: 0
+Module: PC1, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module PC1 report end. (ELAB-965)
+Information: Building the design 'PC2'. (HDL-193)
+Presto compilation completed successfully. (PC2)
+Module: PC2, Ports: 104, Input: 56, Output: 48, Inout: 0
+Module: PC2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module PC2 report end. (ELAB-965)
+Information: Building the design 'DES_Counter'. (HDL-193)
+
+Inferred memory devices in process in routine 'DES_Counter' in file
+         /home/Khach103/Documents/me_labs/DES/rtl/DES_Counter.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    rcounter_reg     | Flip-flop |   4   |  Y  | N  | None  | Async | N  |  10  |
+==================================================================================
+Presto compilation completed successfully. (DES_Counter)
+Module: DES_Counter, Ports: 11, Input: 3, Output: 8, Inout: 0
+Module: DES_Counter, Registers: 4, Async set/reset: 4, Sync set/reset: 0
+Information: Module DES_Counter report end. (ELAB-965)
+Information: Building the design 'DES_DecipherAndKey_Controller'. (HDL-193)
+
+Inferred memory devices in process in routine 'DES_DecipherAndKey_Controller' in file
+         /home/Khach103/Documents/me_labs/DES/rtl/DES_DecipherAndKey_Controller.v'.
+===================================================================================
+|    Register Name     |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+===================================================================================
+| decipher_process_reg | Flip-flop |   1   |  N  | N  | None  | Async | N  |  11  |
+|   key_process_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  |  28  |
+| k16_calculation_reg  | Flip-flop |   1   |  N  | N  | None  | Async | N  |  43  |
+===================================================================================
+Presto compilation completed successfully. (DES_DecipherAndKey_Controller)
+Module: DES_DecipherAndKey_Controller, Ports: 9, Input: 6, Output: 3, Inout: 0
+Module: DES_DecipherAndKey_Controller, Registers: 3, Async set/reset: 3, Sync set/reset: 0
+Information: Module DES_DecipherAndKey_Controller report end. (ELAB-965)
+Information: Building the design 'DES_Encipher_Controller'. (HDL-193)
+
+Inferred memory devices in process in routine 'DES_Encipher_Controller' in file
+         /home/Khach103/Documents/me_labs/DES/rtl/DES_Encipher_Controller.v'.
+===================================================================================
+|    Register Name     |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+===================================================================================
+| encipher_en_sync_reg | Flip-flop |   1   |  N  | N  | None  | Async | N  |  7   |
+| encipher_process_reg | Flip-flop |   1   |  N  | N  | None  | Async | N  |  16  |
+===================================================================================
+Presto compilation completed successfully. (DES_Encipher_Controller)
+Module: DES_Encipher_Controller, Ports: 5, Input: 4, Output: 1, Inout: 0
+Module: DES_Encipher_Controller, Registers: 2, Async set/reset: 2, Sync set/reset: 0
+Information: Module DES_Encipher_Controller report end. (ELAB-965)
+1
+read_sdc /home/Khach103/Documents/me_labs/DES/sdc/DES_core.sdc
+
+Reading SDC version 2.2...
+Current design is 'DES_core'.
+Current design is 'DES_core'.
+1
+set_operating_conditions -min ss0p72vm40c -max ff0p88v125c
+Using operating conditions 'ff0p88v125c' found in library 'saed14rvt_ff0p88v125c'.
+Using operating conditions 'ss0p72vm40c' found in library 'saed14rvt_ss0p72vm40c'.
+1
+set_svf /home/Khach103/Documents/me_labs/DES/outputs/DES_core_formality.svf
+1
+# Compile
+#compile_ultra -retime
+compile
+CPU Load: 3%, Ram Free: 5 GB, Swap Free: 7 GB, Work Disk Free: 345 GB, Tmp Disk Free: 57 GB
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | W-2024.09-DWBB_202409.3 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 947                                    |
+| Number of User Hierarchies                              | 10                                     |
+| Sequential Cell Count                                   | 129                                    |
+| Macro Count                                             | 0                                      |
+| Pad Count                                               | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 349                                    |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with Target Library Subset (with clock_path)     | false  (false )                        |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 345 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: Operating condition ff0p88v125c set on design DES_core has different process,
+voltage and temperatures parameters than the parameters at which target library 
+saed14rvt_ss0p72vm40c is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'DES_Encipher_Controller'
+Loading db file '/home/Khach103/Documents/me_labs/liberty/saed14rvt_ff0p88v125c.db'
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_0P5'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_0P5'. (OPT-914)
+  Processing 'DES_DecipherAndKey_Controller'
+  Processing 'DES_Counter'
+Module: DW01_inc_width4, Ports: 8, Input: 4, Output: 4, Inout: 0
+Module: DW01_inc_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'PC2'
+  Processing 'PC1'
+  Processing 'Inverse_IP'
+  Processing 'P_Permutation'
+  Processing 'S_Box'
+  Processing 'E_Permutation'
+  Processing 'IP'
+  Processing 'DES_core'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:07    1044.9      0.00       0.0       1.0                          
+    0:00:07    1044.9      0.00       0.0       1.0                          
+    0:00:07    1044.9      0.00       0.0       1.0                          
+    0:00:07    1044.9      0.00       0.0       1.0                          
+    0:00:07    1044.9      0.00       0.0       1.0                          
+    0:00:07     545.5      0.00       0.0       1.0                          
+    0:00:07     545.5      0.00       0.0       1.0                          
+    0:00:07     545.5      0.00       0.0       1.0                          
+    0:00:07     545.5      0.00       0.0       1.0                          
+    0:00:07     545.5      0.00       0.0       1.0                          
+    0:00:07     545.5      0.00       0.0       1.0                          
+    0:00:07     545.5      0.00       0.0       1.0                          
+    0:00:07     545.5      0.00       0.0       1.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:07     545.5      0.00       0.0       1.0                          
+    0:00:07     545.5      0.00       0.0       1.0                          
+    0:00:07     545.5      0.00       0.0       1.0                          
+    0:00:07     545.5      0.00       0.0       1.0                          
+    0:00:07     545.5      0.00       0.0       1.0                          
+
+
+  Beginning Design Rule Fixing  (min_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:07     545.5      0.00       0.0       1.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:07     545.5      0.00       0.0       1.0                          
+    0:00:07     545.5      0.00       0.0       1.0                          
+    0:00:07     542.0      0.00       0.0       1.0                          
+    0:00:07     539.2      0.00       0.0       1.0                          
+    0:00:07     538.9      0.00       0.0       1.0                          
+    0:00:07     538.7      0.00       0.0       1.0                          
+    0:00:07     538.7      0.00       0.0       1.0                          
+    0:00:07     538.7      0.00       0.0       1.0                          
+    0:00:07     538.7      0.00       0.0       1.0                          
+    0:00:07     538.5      0.00       0.0       1.0                          
+    0:00:07     538.5      0.00       0.0       1.0                          
+    0:00:07     538.5      0.00       0.0       1.0                          
+    0:00:07     538.5      0.00       0.0       1.0                          
+    0:00:07     538.5      0.00       0.0       1.0                          
+    0:00:07     538.5      0.00       0.0       1.0                          
+    0:00:07     538.5      0.00       0.0       1.0                          
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+CPU Load: 4%, Ram Free: 5 GB, Swap Free: 7 GB, Work Disk Free: 345 GB, Tmp Disk Free: 57 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+check_design
+ 
+****************************************
+check_design summary:
+Version:     W-2024.09-SP3
+Date:        Tue Jul 29 17:07:24 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                    344
+    Unconnected ports (LINT-28)                                    16
+    Feedthrough (LINT-29)                                         312
+    Shorted outputs (LINT-31)                                      16
+--------------------------------------------------------------------------------
+
+Warning: In design 'PC1', port 'des_key_in[56]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC1', port 'des_key_in[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC1', port 'des_key_in[40]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC1', port 'des_key_in[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC1', port 'des_key_in[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC1', port 'des_key_in[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC1', port 'des_key_in[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC1', port 'des_key_in[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC2', port 'cn_dn[47]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC2', port 'cn_dn[38]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC2', port 'cn_dn[34]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC2', port 'cn_dn[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC2', port 'cn_dn[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC2', port 'cn_dn[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC2', port 'cn_dn[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'PC2', port 'cn_dn[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'IP', input port 'des_data[63]' is connected directly to output port 'r0[24]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[62]' is connected directly to output port 'l0[24]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[61]' is connected directly to output port 'r0[16]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[60]' is connected directly to output port 'l0[16]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[59]' is connected directly to output port 'r0[8]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[58]' is connected directly to output port 'l0[8]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[57]' is connected directly to output port 'r0[0]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[56]' is connected directly to output port 'l0[0]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[55]' is connected directly to output port 'r0[25]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[54]' is connected directly to output port 'l0[25]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[53]' is connected directly to output port 'r0[17]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[52]' is connected directly to output port 'l0[17]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[51]' is connected directly to output port 'r0[9]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[50]' is connected directly to output port 'l0[9]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[49]' is connected directly to output port 'r0[1]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[48]' is connected directly to output port 'l0[1]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[47]' is connected directly to output port 'r0[26]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[46]' is connected directly to output port 'l0[26]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[45]' is connected directly to output port 'r0[18]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[44]' is connected directly to output port 'l0[18]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[43]' is connected directly to output port 'r0[10]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[42]' is connected directly to output port 'l0[10]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[41]' is connected directly to output port 'r0[2]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[40]' is connected directly to output port 'l0[2]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[39]' is connected directly to output port 'r0[27]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[38]' is connected directly to output port 'l0[27]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[37]' is connected directly to output port 'r0[19]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[36]' is connected directly to output port 'l0[19]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[35]' is connected directly to output port 'r0[11]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[34]' is connected directly to output port 'l0[11]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[33]' is connected directly to output port 'r0[3]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[32]' is connected directly to output port 'l0[3]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[31]' is connected directly to output port 'r0[28]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[30]' is connected directly to output port 'l0[28]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[29]' is connected directly to output port 'r0[20]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[28]' is connected directly to output port 'l0[20]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[27]' is connected directly to output port 'r0[12]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[26]' is connected directly to output port 'l0[12]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[25]' is connected directly to output port 'r0[4]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[24]' is connected directly to output port 'l0[4]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[23]' is connected directly to output port 'r0[29]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[22]' is connected directly to output port 'l0[29]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[21]' is connected directly to output port 'r0[21]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[20]' is connected directly to output port 'l0[21]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[19]' is connected directly to output port 'r0[13]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[18]' is connected directly to output port 'l0[13]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[17]' is connected directly to output port 'r0[5]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[16]' is connected directly to output port 'l0[5]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[15]' is connected directly to output port 'r0[30]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[14]' is connected directly to output port 'l0[30]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[13]' is connected directly to output port 'r0[22]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[12]' is connected directly to output port 'l0[22]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[11]' is connected directly to output port 'r0[14]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[10]' is connected directly to output port 'l0[14]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[9]' is connected directly to output port 'r0[6]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[8]' is connected directly to output port 'l0[6]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[7]' is connected directly to output port 'r0[31]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[6]' is connected directly to output port 'l0[31]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[5]' is connected directly to output port 'r0[23]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[4]' is connected directly to output port 'l0[23]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[3]' is connected directly to output port 'r0[15]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[2]' is connected directly to output port 'l0[15]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[1]' is connected directly to output port 'r0[7]'. (LINT-29)
+Warning: In design 'IP', input port 'des_data[0]' is connected directly to output port 'l0[7]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[31]' is connected directly to output port 're[0]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[31]' is connected directly to output port 're[46]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[30]' is connected directly to output port 're[45]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[29]' is connected directly to output port 're[44]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[28]' is connected directly to output port 're[41]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[28]' is connected directly to output port 're[43]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[27]' is connected directly to output port 're[40]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[27]' is connected directly to output port 're[42]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[26]' is connected directly to output port 're[39]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[25]' is connected directly to output port 're[38]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[24]' is connected directly to output port 're[35]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[24]' is connected directly to output port 're[37]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[23]' is connected directly to output port 're[34]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[23]' is connected directly to output port 're[36]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[22]' is connected directly to output port 're[33]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[21]' is connected directly to output port 're[32]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[20]' is connected directly to output port 're[29]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[20]' is connected directly to output port 're[31]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[19]' is connected directly to output port 're[28]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[19]' is connected directly to output port 're[30]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[18]' is connected directly to output port 're[27]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[17]' is connected directly to output port 're[26]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[16]' is connected directly to output port 're[23]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[16]' is connected directly to output port 're[25]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[15]' is connected directly to output port 're[22]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[15]' is connected directly to output port 're[24]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[14]' is connected directly to output port 're[21]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[13]' is connected directly to output port 're[20]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[12]' is connected directly to output port 're[17]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[12]' is connected directly to output port 're[19]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[11]' is connected directly to output port 're[16]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[11]' is connected directly to output port 're[18]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[10]' is connected directly to output port 're[15]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[9]' is connected directly to output port 're[14]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[8]' is connected directly to output port 're[11]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[8]' is connected directly to output port 're[13]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[7]' is connected directly to output port 're[10]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[7]' is connected directly to output port 're[12]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[6]' is connected directly to output port 're[9]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[5]' is connected directly to output port 're[8]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[4]' is connected directly to output port 're[5]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[4]' is connected directly to output port 're[7]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[3]' is connected directly to output port 're[4]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[3]' is connected directly to output port 're[6]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[2]' is connected directly to output port 're[3]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[1]' is connected directly to output port 're[2]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[0]' is connected directly to output port 're[1]'. (LINT-29)
+Warning: In design 'E_Permutation', input port 'r_input[0]' is connected directly to output port 're[47]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[31]' is connected directly to output port 'f_value[23]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[30]' is connected directly to output port 'f_value[15]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[29]' is connected directly to output port 'f_value[9]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[28]' is connected directly to output port 'f_value[1]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[27]' is connected directly to output port 'f_value[19]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[26]' is connected directly to output port 'f_value[4]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[25]' is connected directly to output port 'f_value[30]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[24]' is connected directly to output port 'f_value[14]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[23]' is connected directly to output port 'f_value[8]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[22]' is connected directly to output port 'f_value[16]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[21]' is connected directly to output port 'f_value[2]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[20]' is connected directly to output port 'f_value[26]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[19]' is connected directly to output port 'f_value[6]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[18]' is connected directly to output port 'f_value[12]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[17]' is connected directly to output port 'f_value[22]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[16]' is connected directly to output port 'f_value[31]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[15]' is connected directly to output port 'f_value[24]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[14]' is connected directly to output port 'f_value[18]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[13]' is connected directly to output port 'f_value[7]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[12]' is connected directly to output port 'f_value[29]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[11]' is connected directly to output port 'f_value[28]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[10]' is connected directly to output port 'f_value[3]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[9]' is connected directly to output port 'f_value[21]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[8]' is connected directly to output port 'f_value[13]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[7]' is connected directly to output port 'f_value[0]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[6]' is connected directly to output port 'f_value[20]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[5]' is connected directly to output port 'f_value[10]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[4]' is connected directly to output port 'f_value[25]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[3]' is connected directly to output port 'f_value[27]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[2]' is connected directly to output port 'f_value[5]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[1]' is connected directly to output port 'f_value[17]'. (LINT-29)
+Warning: In design 'P_Permutation', input port 'p_in[0]' is connected directly to output port 'f_value[11]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[63]' is connected directly to output port 'desc_result[6]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[62]' is connected directly to output port 'desc_result[14]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[61]' is connected directly to output port 'desc_result[22]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[60]' is connected directly to output port 'desc_result[30]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[59]' is connected directly to output port 'desc_result[38]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[58]' is connected directly to output port 'desc_result[46]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[57]' is connected directly to output port 'desc_result[54]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[56]' is connected directly to output port 'desc_result[62]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[55]' is connected directly to output port 'desc_result[4]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[54]' is connected directly to output port 'desc_result[12]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[53]' is connected directly to output port 'desc_result[20]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[52]' is connected directly to output port 'desc_result[28]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[51]' is connected directly to output port 'desc_result[36]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[50]' is connected directly to output port 'desc_result[44]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[49]' is connected directly to output port 'desc_result[52]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[48]' is connected directly to output port 'desc_result[60]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[47]' is connected directly to output port 'desc_result[2]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[46]' is connected directly to output port 'desc_result[10]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[45]' is connected directly to output port 'desc_result[18]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[44]' is connected directly to output port 'desc_result[26]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[43]' is connected directly to output port 'desc_result[34]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[42]' is connected directly to output port 'desc_result[42]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[41]' is connected directly to output port 'desc_result[50]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[40]' is connected directly to output port 'desc_result[58]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[39]' is connected directly to output port 'desc_result[0]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[38]' is connected directly to output port 'desc_result[8]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[37]' is connected directly to output port 'desc_result[16]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[36]' is connected directly to output port 'desc_result[24]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[35]' is connected directly to output port 'desc_result[32]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[34]' is connected directly to output port 'desc_result[40]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[33]' is connected directly to output port 'desc_result[48]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[32]' is connected directly to output port 'desc_result[56]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[31]' is connected directly to output port 'desc_result[7]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[30]' is connected directly to output port 'desc_result[15]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[29]' is connected directly to output port 'desc_result[23]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[28]' is connected directly to output port 'desc_result[31]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[27]' is connected directly to output port 'desc_result[39]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[26]' is connected directly to output port 'desc_result[47]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[25]' is connected directly to output port 'desc_result[55]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[24]' is connected directly to output port 'desc_result[63]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[23]' is connected directly to output port 'desc_result[5]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[22]' is connected directly to output port 'desc_result[13]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[21]' is connected directly to output port 'desc_result[21]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[20]' is connected directly to output port 'desc_result[29]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[19]' is connected directly to output port 'desc_result[37]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[18]' is connected directly to output port 'desc_result[45]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[17]' is connected directly to output port 'desc_result[53]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[16]' is connected directly to output port 'desc_result[61]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[15]' is connected directly to output port 'desc_result[3]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[14]' is connected directly to output port 'desc_result[11]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[13]' is connected directly to output port 'desc_result[19]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[12]' is connected directly to output port 'desc_result[27]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[11]' is connected directly to output port 'desc_result[35]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[10]' is connected directly to output port 'desc_result[43]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[9]' is connected directly to output port 'desc_result[51]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[8]' is connected directly to output port 'desc_result[59]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[7]' is connected directly to output port 'desc_result[1]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[6]' is connected directly to output port 'desc_result[9]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[5]' is connected directly to output port 'desc_result[17]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[4]' is connected directly to output port 'desc_result[25]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[3]' is connected directly to output port 'desc_result[33]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[2]' is connected directly to output port 'desc_result[41]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[1]' is connected directly to output port 'desc_result[49]'. (LINT-29)
+Warning: In design 'Inverse_IP', input port 'inv_ip_input[0]' is connected directly to output port 'desc_result[57]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[63]' is connected directly to output port 'c0[20]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[62]' is connected directly to output port 'c0[12]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[61]' is connected directly to output port 'c0[4]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[60]' is connected directly to output port 'd0[0]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[59]' is connected directly to output port 'd0[4]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[58]' is connected directly to output port 'd0[12]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[57]' is connected directly to output port 'd0[20]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[55]' is connected directly to output port 'c0[21]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[54]' is connected directly to output port 'c0[13]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[53]' is connected directly to output port 'c0[5]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[52]' is connected directly to output port 'd0[1]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[51]' is connected directly to output port 'd0[5]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[50]' is connected directly to output port 'd0[13]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[49]' is connected directly to output port 'd0[21]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[47]' is connected directly to output port 'c0[22]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[46]' is connected directly to output port 'c0[14]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[45]' is connected directly to output port 'c0[6]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[44]' is connected directly to output port 'd0[2]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[43]' is connected directly to output port 'd0[6]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[42]' is connected directly to output port 'd0[14]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[41]' is connected directly to output port 'd0[22]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[39]' is connected directly to output port 'c0[23]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[38]' is connected directly to output port 'c0[15]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[37]' is connected directly to output port 'c0[7]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[36]' is connected directly to output port 'd0[3]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[35]' is connected directly to output port 'd0[7]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[34]' is connected directly to output port 'd0[15]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[33]' is connected directly to output port 'd0[23]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[31]' is connected directly to output port 'c0[24]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[30]' is connected directly to output port 'c0[16]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[29]' is connected directly to output port 'c0[8]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[28]' is connected directly to output port 'c0[0]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[27]' is connected directly to output port 'd0[8]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[26]' is connected directly to output port 'd0[16]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[25]' is connected directly to output port 'd0[24]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[23]' is connected directly to output port 'c0[25]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[22]' is connected directly to output port 'c0[17]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[21]' is connected directly to output port 'c0[9]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[20]' is connected directly to output port 'c0[1]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[19]' is connected directly to output port 'd0[9]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[18]' is connected directly to output port 'd0[17]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[17]' is connected directly to output port 'd0[25]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[15]' is connected directly to output port 'c0[26]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[14]' is connected directly to output port 'c0[18]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[13]' is connected directly to output port 'c0[10]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[12]' is connected directly to output port 'c0[2]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[11]' is connected directly to output port 'd0[10]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[10]' is connected directly to output port 'd0[18]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[9]' is connected directly to output port 'd0[26]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[7]' is connected directly to output port 'c0[27]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[6]' is connected directly to output port 'c0[19]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[5]' is connected directly to output port 'c0[11]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[4]' is connected directly to output port 'c0[3]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[3]' is connected directly to output port 'd0[11]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[2]' is connected directly to output port 'd0[19]'. (LINT-29)
+Warning: In design 'PC1', input port 'des_key_in[1]' is connected directly to output port 'd0[27]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[55]' is connected directly to output port 'round_key[43]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[54]' is connected directly to output port 'round_key[24]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[53]' is connected directly to output port 'round_key[41]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[52]' is connected directly to output port 'round_key[32]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[51]' is connected directly to output port 'round_key[42]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[50]' is connected directly to output port 'round_key[38]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[49]' is connected directly to output port 'round_key[28]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[48]' is connected directly to output port 'round_key[30]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[46]' is connected directly to output port 'round_key[36]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[45]' is connected directly to output port 'round_key[45]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[44]' is connected directly to output port 'round_key[33]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[43]' is connected directly to output port 'round_key[25]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[42]' is connected directly to output port 'round_key[47]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[41]' is connected directly to output port 'round_key[39]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[40]' is connected directly to output port 'round_key[29]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[39]' is connected directly to output port 'round_key[46]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[37]' is connected directly to output port 'round_key[34]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[36]' is connected directly to output port 'round_key[26]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[35]' is connected directly to output port 'round_key[37]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[33]' is connected directly to output port 'round_key[35]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[32]' is connected directly to output port 'round_key[44]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[30]' is connected directly to output port 'round_key[31]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[29]' is connected directly to output port 'round_key[27]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[28]' is connected directly to output port 'round_key[40]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[27]' is connected directly to output port 'round_key[1]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[26]' is connected directly to output port 'round_key[17]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[25]' is connected directly to output port 'round_key[21]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[24]' is connected directly to output port 'round_key[0]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[23]' is connected directly to output port 'round_key[13]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[22]' is connected directly to output port 'round_key[7]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[20]' is connected directly to output port 'round_key[2]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[19]' is connected directly to output port 'round_key[20]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[17]' is connected directly to output port 'round_key[9]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[16]' is connected directly to output port 'round_key[16]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[15]' is connected directly to output port 'round_key[23]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[14]' is connected directly to output port 'round_key[4]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[12]' is connected directly to output port 'round_key[11]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[11]' is connected directly to output port 'round_key[14]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[10]' is connected directly to output port 'round_key[5]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[9]' is connected directly to output port 'round_key[19]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[8]' is connected directly to output port 'round_key[12]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[7]' is connected directly to output port 'round_key[10]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[6]' is connected directly to output port 'round_key[3]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[5]' is connected directly to output port 'round_key[15]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[4]' is connected directly to output port 'round_key[22]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[3]' is connected directly to output port 'round_key[6]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[1]' is connected directly to output port 'round_key[18]'. (LINT-29)
+Warning: In design 'PC2', input port 'cn_dn[0]' is connected directly to output port 'round_key[8]'. (LINT-29)
+Warning: In design 'E_Permutation', output port 're[47]' is connected directly to output port 're[1]'. (LINT-31)
+Warning: In design 'E_Permutation', output port 're[46]' is connected directly to output port 're[0]'. (LINT-31)
+Warning: In design 'E_Permutation', output port 're[43]' is connected directly to output port 're[41]'. (LINT-31)
+Warning: In design 'E_Permutation', output port 're[42]' is connected directly to output port 're[40]'. (LINT-31)
+Warning: In design 'E_Permutation', output port 're[37]' is connected directly to output port 're[35]'. (LINT-31)
+Warning: In design 'E_Permutation', output port 're[36]' is connected directly to output port 're[34]'. (LINT-31)
+Warning: In design 'E_Permutation', output port 're[31]' is connected directly to output port 're[29]'. (LINT-31)
+Warning: In design 'E_Permutation', output port 're[30]' is connected directly to output port 're[28]'. (LINT-31)
+Warning: In design 'E_Permutation', output port 're[25]' is connected directly to output port 're[23]'. (LINT-31)
+Warning: In design 'E_Permutation', output port 're[24]' is connected directly to output port 're[22]'. (LINT-31)
+Warning: In design 'E_Permutation', output port 're[19]' is connected directly to output port 're[17]'. (LINT-31)
+Warning: In design 'E_Permutation', output port 're[18]' is connected directly to output port 're[16]'. (LINT-31)
+Warning: In design 'E_Permutation', output port 're[13]' is connected directly to output port 're[11]'. (LINT-31)
+Warning: In design 'E_Permutation', output port 're[12]' is connected directly to output port 're[10]'. (LINT-31)
+Warning: In design 'E_Permutation', output port 're[7]' is connected directly to output port 're[5]'. (LINT-31)
+Warning: In design 'E_Permutation', output port 're[6]' is connected directly to output port 're[4]'. (LINT-31)
+1
+# Reports
+report_area > /home/Khach103/Documents/me_labs/DES/reports/area.rpt
+report_timing > /home/Khach103/Documents/me_labs/DES/reports/timing.rpt
+report_power > /home/Khach103/Documents/me_labs/DES/reports/power.rpt
+report_qor > /home/Khach103/Documents/me_labs/DES/reports/qor.rpt
+# Export netlist
+write -format verilog -hierarchy -output /home/Khach103/Documents/me_labs/DES/outputs/Des_core_synth.v
+Writing verilog file '/home/Khach103/Documents/me_labs/DES/outputs/Des_core_synth.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+set_svf -off
+1
+write_sdf /home/Khach103/Documents/me_labs/DES/outputs/DES_core_synth.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/Khach103/Documents/me_labs/DES/outputs/DES_core_synth.sdf'. (WT-3)
+1
+# === Formality Preparation ===
+# Export DDC (optional)
+write -format ddc -hierarchy -output /home/Khach103/Documents/me_labs/DES/outputs/DES_core_synth.ddc
+Writing ddc file '/home/Khach103/Documents/me_labs/DES/outputs/DES_core_synth.ddc'.
+1
+# Export SDC constraints (optional but recommended)
+write_sdc /home/Khach103/Documents/me_labs/DES/outputs/DES_core_synth.sdc
+1
+# Export environment script for Formality
+write_script -output /home/Khach103/Documents/me_labs/DES/outputs/DES_core_env.tcl
+1
+# Turn off SVF recording
+set_svf -off
+1
+# Optionally start GUI
+gui_start
+Current design is 'DES_core'.
+Current design is 'DES_core'.
+dc_shell> report_qor
+ 
+****************************************
+Report : qor
+Design : DES_core
+Version: W-2024.09-SP3
+Date   : Tue Jul 29 17:08:11 2025
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              14.00
+  Critical Path Length:          0.27
+  Critical Path Slack:           0.25
+  Critical Path Clk Period:      1.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:         -0.12
+  Total Hold Violation:        -14.18
+  No. of Hold Violations:      120.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         10
+  Hierarchical Port Count:        729
+  Leaf Cell Count:               1510
+  Buf/Inv Cell Count:             362
+  Buf Cell Count:                 103
+  Inv Cell Count:                 259
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      1381
+  Sequential Cell Count:          129
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      417.004801
+  Noncombinational Area:   121.478399
+  Buf/Inv Area:             73.437600
+  Total Buffer Area:            27.44
+  Total Inverter Area:          46.00
+  Macro/Black Box Area:      0.000000
+  Net Area:                811.603941
+  -----------------------------------
+  Cell Area:               538.483200
+  Design Area:            1350.087141
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          1674
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: dsac103
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.17
+  Logic Optimization:                  4.55
+  Mapping Optimization:                0.58
+  -----------------------------------------
+  Overall Compile Time:                6.56
+  Overall Compile Wall Clock Time:     7.10
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.12  TNS: 14.18  Number of Violating Paths: 120
+
+  --------------------------------------------------------------------
+
+
+1
+dc_shell> 

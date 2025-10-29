@@ -1976,6 +1976,12 @@
             <mxPoint x="160" y="319.65999999999997" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="pB79YOrMDcUmBH2-8MYN-1" value="l_input[31:0]" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="285" y="280" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZBHj5Mw97t-Hc8t3EG_e-1" value="r_input[31:0]" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="285" y="320" width="80" height="20" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

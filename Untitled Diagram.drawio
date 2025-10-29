@@ -1940,7 +1940,7 @@
           <mxGeometry x="245" y="140" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="3REG6W5nXiLGLglHO5_M-14" value="rst_n" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="245" y="160" width="40" height="20" as="geometry" />
+          <mxGeometry x="245" y="170" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="ESSij1TTs00y5Dw8m9JT-1" value="desc_result[63:0]" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="480" y="82.5" width="60" height="30" as="geometry" />
@@ -1999,8 +1999,8 @@
         </mxCell>
         <mxCell id="ie3M47GnJ9J96EaAUfoQ-2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="280" y="170.33999999999997" as="sourcePoint" />
-            <mxPoint x="320" y="170" as="targetPoint" />
+            <mxPoint x="280" y="179.85999999999999" as="sourcePoint" />
+            <mxPoint x="320" y="179.52" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>

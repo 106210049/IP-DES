@@ -1888,6 +1888,9 @@
         <mxCell id="OQlTuIFgj1w8SUyPh335-4" value="" style="shape=waypoint;sketch=0;fillStyle=solid;size=6;pointerEvents=1;points=[];fillColor=none;resizable=0;rotatable=0;perimeter=centerPerimeter;snapToPoint=1;" vertex="1" parent="1">
           <mxGeometry x="710" y="710" width="20" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="6QZBZ5IHPvjZrKuTgJpA-1" value="key_process" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="660" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

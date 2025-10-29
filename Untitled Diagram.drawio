@@ -1985,6 +1985,18 @@
         <mxCell id="ZBHj5Mw97t-Hc8t3EG_e-2" value="des_data[63:0]" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="70" y="300" width="90" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="ZBHj5Mw97t-Hc8t3EG_e-3" value="DES function" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZBHj5Mw97t-Hc8t3EG_e-4" value="r_input[31:0]" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="360" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZBHj5Mw97t-Hc8t3EG_e-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="380" as="targetPoint" />
+            <mxPoint x="360" y="380" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

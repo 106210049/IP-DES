@@ -1223,6 +1223,15 @@
             <mxPoint x="400" y="429.71" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="AZn7rFDYTBb9ViHDbAW7-1" value="key_process" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="200" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AZn7rFDYTBb9ViHDbAW7-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="210" as="sourcePoint" />
+            <mxPoint x="240" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

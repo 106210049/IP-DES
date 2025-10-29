@@ -1315,6 +1315,15 @@
         <mxCell id="VI0pqqwNdoK03V1LYAjX-2" value="round_key[47:0]" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="430" y="340" width="90" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="VI0pqqwNdoK03V1LYAjX-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="380.09999999999997" as="sourcePoint" />
+            <mxPoint x="560" y="379.76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VI0pqqwNdoK03V1LYAjX-4" value="clk" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="485" y="370" width="40" height="20" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

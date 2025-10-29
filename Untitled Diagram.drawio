@@ -1170,7 +1170,7 @@
           <mxGeometry x="410" y="180" width="90" height="20" as="geometry" />
         </mxCell>
         <mxCell id="JjduNQLq2u5Iwu0anQEU-1" value="DES_Controller" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="240" y="360" width="120" height="120" as="geometry" />
+          <mxGeometry x="240" y="360" width="120" height="140" as="geometry" />
         </mxCell>
         <mxCell id="Fjo4Vs5l66RCZgmD7NQo-1" value="clk" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="160" y="370" width="40" height="20" as="geometry" />
@@ -1186,17 +1186,17 @@
         </mxCell>
         <mxCell id="Fjo4Vs5l66RCZgmD7NQo-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="200" y="419.71" as="sourcePoint" />
-            <mxPoint x="240" y="419.71" as="targetPoint" />
+            <mxPoint x="200" y="425" as="sourcePoint" />
+            <mxPoint x="240" y="425" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="hcn7tBFOwPucoG-VPQ1U-1" value="des_encipher_en" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="110" y="450" width="90" height="20" as="geometry" />
+          <mxGeometry x="110" y="460" width="90" height="20" as="geometry" />
         </mxCell>
         <mxCell id="hcn7tBFOwPucoG-VPQ1U-2" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="200" y="460" as="sourcePoint" />
-            <mxPoint x="240" y="460" as="targetPoint" />
+            <mxPoint x="200" y="469.71" as="sourcePoint" />
+            <mxPoint x="240" y="469.71" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="oUiBLoQ8Pide1NCM39D0-1" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">

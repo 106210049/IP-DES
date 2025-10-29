@@ -1973,6 +1973,11 @@
         <mxCell id="ZBHj5Mw97t-Hc8t3EG_e-2" value="des_data[63:0]" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="60" y="270" width="90" height="20" as="geometry" />
         </mxCell>
+        <mxCell id="AS86VzKO4SuGIM555NMW-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZBHj5Mw97t-Hc8t3EG_e-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="ZBHj5Mw97t-Hc8t3EG_e-3" value="DES function" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="360" width="120" height="80" as="geometry" />
         </mxCell>
@@ -2044,6 +2049,9 @@
         </mxCell>
         <mxCell id="7VaKitpNZYM8aEtgOorP-1" value="round_key[47:0]" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="270" y="410" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zw9WdtjH641U4ZKZFeX_-1" value="f_value[31:0]" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="380" width="60" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

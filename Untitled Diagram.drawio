@@ -1094,7 +1094,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="nxua1qF0ph10eIYl6912" name="High Level Block">
-    <mxGraphModel dx="1188" dy="648" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="570" dy="311" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1120,10 +1120,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5VA2yEFi1c6Qp-fF9PH6-4" value="des_key_in[63:0]" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="110" y="160" width="90" height="30" as="geometry" />
+          <mxGeometry x="130" y="70" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5VA2yEFi1c6Qp-fF9PH6-5" value="decipher_process" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="110" y="180" width="100" height="30" as="geometry" />
+          <mxGeometry x="200" y="100" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5VA2yEFi1c6Qp-fF9PH6-6" value="shift_left_1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="100" y="200" width="80" height="30" as="geometry" />

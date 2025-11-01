@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8" pages="15">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8" pages="16">
   <diagram name="DES Cipher Algorithm" id="lHj6TSKfC4uMigtzomFA">
     <mxGraphModel dx="989" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -2218,7 +2218,7 @@
         </mxCell>
         <mxCell id="IVLMjNWvgaUbEKA6Cn2F-2" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="IVLMjNWvgaUbEKA6Cn2F-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="30" y="236.25" as="sourcePoint" />
+            <mxPoint x="10" y="236" as="sourcePoint" />
             <mxPoint x="40" y="186.25" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -2371,7 +2371,7 @@
           <mxGeometry x="150" y="207.5" width="60" height="20" as="geometry" />
         </mxCell>
         <mxCell id="A1HacLxuQ4nITjY4aq4Y-1" value="r_input&lt;div&gt;[31:0]&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="20" y="245" width="60" height="30" as="geometry" />
+          <mxGeometry y="241.25" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-G1bYegqLfsp-7gWxktb-1" value="f_value&lt;div&gt;[31:0]&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="790" y="221.25" width="60" height="30" as="geometry" />
@@ -4635,6 +4635,19 @@
         <mxCell id="yQFFs1Sx8ggcbZ135TJD-5" value="f_value[31:0]" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="420" y="230" width="60" height="30" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="77Up4uf2ZmLgTUA75uR9" name="Sbox block">
+    <mxGraphModel dx="1426" dy="1877" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="&lt;img src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipR1U6eAZ0CFc11dJB-W_-0xcTAo_L9DSVdil6oTZ0Xl-4f9RmjHRNsQY8B0U5M1zvRt_hvJfrF4vHNBKENhpasEBBrrmI-02adv_5-nGKW4WVtB4aWkAet1Aiyl3U2GctMCIC7VfaNdIC/s1600/des_encipher_S.png&quot;&gt;" id="hl5PGsdMuq5p2NCUHCK2-1">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="90" y="-420" width="630" height="800" as="geometry" />
+          </mxCell>
+        </UserObject>
       </root>
     </mxGraphModel>
   </diagram>

@@ -2210,7 +2210,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="IVLMjNWvgaUbEKA6Cn2F-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IVLMjNWvgaUbEKA6Cn2F-1" value="E table block" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="120" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="IVLMjNWvgaUbEKA6Cn2F-2" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="IVLMjNWvgaUbEKA6Cn2F-1">
@@ -2218,6 +2218,12 @@
             <mxPoint x="80" y="160" as="sourcePoint" />
             <mxPoint x="130" y="110" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="IVLMjNWvgaUbEKA6Cn2F-4" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.logic_gates.logic_gate;operation=xor;" vertex="1" parent="1">
+          <mxGeometry x="320" y="140" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IVLMjNWvgaUbEKA6Cn2F-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IVLMjNWvgaUbEKA6Cn2F-1" target="IVLMjNWvgaUbEKA6Cn2F-4">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

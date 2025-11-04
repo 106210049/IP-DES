@@ -1558,16 +1558,16 @@
     </mxGraphModel>
   </diagram>
   <diagram id="7vEzlyZ4yaA84jgNWfVu" name="Key schedule high level block">
-    <mxGraphModel dx="496" dy="267" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="868" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="ewaqAck_XUy-qU6guaNH-37" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
-          <mxGeometry x="160" y="270" width="170" height="310" as="geometry" />
+          <mxGeometry x="160" y="270" width="570" height="310" as="geometry" />
         </mxCell>
         <mxCell id="is3PZpIgotdUpu1dR9V5-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="is3PZpIgotdUpu1dR9V5-2" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="520" y="120" as="targetPoint" />
+            <mxPoint x="480" y="120" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="is3PZpIgotdUpu1dR9V5-2" value="Key schedule block" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
@@ -1652,7 +1652,7 @@
           <mxGeometry x="220" y="140" width="60" height="20" as="geometry" />
         </mxCell>
         <mxCell id="UvEQLESDA5FNEDaY5zlJ-1" value="round_key[47:0]" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="460" y="100" width="90" height="20" as="geometry" />
+          <mxGeometry x="480" y="110" width="90" height="20" as="geometry" />
         </mxCell>
         <mxCell id="FA8kE_xeV-VyQ44CTfil-1" value="PC1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="1" vertex="1">
           <mxGeometry x="280" y="280" width="80" height="160" as="geometry" />
@@ -1689,7 +1689,7 @@
         </mxCell>
         <mxCell id="ewaqAck_XUy-qU6guaNH-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="E3yNiQS5-ZBd1zFq7bhI-3" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="800" y="400" as="targetPoint" />
+            <mxPoint x="760" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="E3yNiQS5-ZBd1zFq7bhI-3" value="PC2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=#56517e;" parent="1" vertex="1">

@@ -1,0 +1,143 @@
+# Saving coverage database on exit...
+# End time: 16:13:46 on Jul 20,2026, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0
+# vsim -c -coverage work.tb_top_des -sv_lib des_ref "+TESTNAME=RANDOM" -onfinish final -do "run -all; coverage save -onexit RANDOM.ucdb;" 
+# Start time: 16:13:46 on Jul 20,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.testcase_pkg(fast)
+# Loading work.testbench_sv_unit(fast)
+# Loading work.tb_top_des(fast)
+# Loading work.test(fast)
+# Loading work.des_checker(fast)
+# Loading work.des_if(fast)
+# ** Note: (vsim-7082) For C/C++ auto compile, choosing compiler C:\msys64\ucrt64\bin\gcc.exe set from the PATH environment variable.
+# Loading .\des_ref.dll
+# run -all
+# [TEST] TESTNAME=RANDOM TIMEOUT=2000
+# [ENV] Starting environment...
+# [ENV] Expected transaction count = 10
+# [GEN] Time=0 | MODE=DEC | Data=d2ce3f080ae2e751 | Key=7aa15c2f5bc5608c
+# [GEN] Time=0 | MODE=ENC | Data=67d6b30f9c99575a | Key=b1cfa97737a15dac
+# [GEN] Time=0 | MODE=DEC | Data=12e6b73b4459e8e9 | Key=49cb8c42ecc8d33f
+# [GEN] Time=0 | MODE=ENC | Data=048655cccae84c30 | Key=eaa13936b9eaf319
+# [GEN] Time=0 | MODE=ENC | Data=582f87210a11b464 | Key=08bca1aedd9214d8
+# [GEN] Time=0 | MODE=DEC | Data=aa6229c68955ceeb | Key=deb73ac6e9b96015
+# [GEN] Time=0 | MODE=ENC | Data=35c6eea71077b304 | Key=fa64d39a0166b27f
+# [GEN] Time=0 | MODE=DEC | Data=cb347968a100aaaa | Key=74490f166b7456a1
+# [GEN] Time=0 | MODE=DEC | Data=7a73250d0f0d963c | Key=8767830ddf0d2e6e
+# [GEN] Time=0 | MODE=ENC | Data=230cb163affd2d10 | Key=153b788ef652d88e
+# [GEN] Finished generating 10 transactions
+# [DRV] Reset released, starting driver...
+# [DRV] Got transaction | MODE=DEC | DATA=d2ce3f080ae2e751 | KEY=7aa15c2f5bc5608c
+# [MON] Reset released, starting monitor...
+# [PASS] ASSERT DES READY
+# [DRV] Driven transaction | MODE=DEC | DATA=d2ce3f080ae2e751 | KEY=7aa15c2f5bc5608c | ENC=0 | DEC=1
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [MON] Captured input | MODE=DEC | DATA=d2ce3f080ae2e751 | KEY=7aa15c2f5bc5608c | ENC=0 | DEC=1
+# [DRV] DUT completed operation | MODE=DEC
+# [DRV] Got transaction | MODE=ENC | DATA=67d6b30f9c99575a | KEY=b1cfa97737a15dac
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [DRV] Driven transaction | MODE=ENC | DATA=67d6b30f9c99575a | KEY=b1cfa97737a15dac | ENC=1 | DEC=0
+# [MON] Captured output | MODE=DEC | RESULT=aad7c26cae8ae8bf | READY=1
+# [SCB][PASS] 142: DEC successful. Result=aad7c26cae8ae8bf
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [MON] Captured input | MODE=ENC | DATA=67d6b30f9c99575a | KEY=b1cfa97737a15dac | ENC=1 | DEC=0
+# [DRV] DUT completed operation | MODE=ENC
+# [DRV] Got transaction | MODE=DEC | DATA=12e6b73b4459e8e9 | KEY=49cb8c42ecc8d33f
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [DRV] Driven transaction | MODE=DEC | DATA=12e6b73b4459e8e9 | KEY=49cb8c42ecc8d33f | ENC=0 | DEC=1
+# [MON] Captured output | MODE=ENC | RESULT=badf77b865e33c87 | READY=1
+# [SCB][PASS] 218: ENC successful. Result=badf77b865e33c87
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [MON] Captured input | MODE=DEC | DATA=12e6b73b4459e8e9 | KEY=49cb8c42ecc8d33f | ENC=0 | DEC=1
+# [DRV] DUT completed operation | MODE=DEC
+# [DRV] Got transaction | MODE=ENC | DATA=048655cccae84c30 | KEY=eaa13936b9eaf319
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [DRV] Driven transaction | MODE=ENC | DATA=048655cccae84c30 | KEY=eaa13936b9eaf319 | ENC=1 | DEC=0
+# [MON] Captured output | MODE=DEC | RESULT=dca4607d1a68bde9 | READY=1
+# [SCB][PASS] 354: DEC successful. Result=dca4607d1a68bde9
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [MON] Captured input | MODE=ENC | DATA=048655cccae84c30 | KEY=eaa13936b9eaf319 | ENC=1 | DEC=0
+# [DRV] DUT completed operation | MODE=ENC
+# [DRV] Got transaction | MODE=ENC | DATA=582f87210a11b464 | KEY=08bca1aedd9214d8
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [DRV] Driven transaction | MODE=ENC | DATA=582f87210a11b464 | KEY=08bca1aedd9214d8 | ENC=1 | DEC=0
+# [MON] Captured output | MODE=ENC | RESULT=6ee913f2750244e6 | READY=1
+# [SCB][PASS] 430: ENC successful. Result=6ee913f2750244e6
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [MON] Captured input | MODE=ENC | DATA=582f87210a11b464 | KEY=08bca1aedd9214d8 | ENC=1 | DEC=0
+# [DRV] DUT completed operation | MODE=ENC
+# [DRV] Got transaction | MODE=DEC | DATA=aa6229c68955ceeb | KEY=deb73ac6e9b96015
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [DRV] Driven transaction | MODE=DEC | DATA=aa6229c68955ceeb | KEY=deb73ac6e9b96015 | ENC=0 | DEC=1
+# [MON] Captured output | MODE=ENC | RESULT=dd93a48b2dffbe27 | READY=1
+# [SCB][PASS] 506: ENC successful. Result=dd93a48b2dffbe27
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [MON] Captured input | MODE=DEC | DATA=aa6229c68955ceeb | KEY=deb73ac6e9b96015 | ENC=0 | DEC=1
+# [DRV] DUT completed operation | MODE=DEC
+# [DRV] Got transaction | MODE=ENC | DATA=35c6eea71077b304 | KEY=fa64d39a0166b27f
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [DRV] Driven transaction | MODE=ENC | DATA=35c6eea71077b304 | KEY=fa64d39a0166b27f | ENC=1 | DEC=0
+# [MON] Captured output | MODE=DEC | RESULT=c456805b086a2fd1 | READY=1
+# [SCB][PASS] 642: DEC successful. Result=c456805b086a2fd1
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [MON] Captured input | MODE=ENC | DATA=35c6eea71077b304 | KEY=fa64d39a0166b27f | ENC=1 | DEC=0
+# [DRV] DUT completed operation | MODE=ENC
+# [DRV] Got transaction | MODE=DEC | DATA=cb347968a100aaaa | KEY=74490f166b7456a1
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [DRV] Driven transaction | MODE=DEC | DATA=cb347968a100aaaa | KEY=74490f166b7456a1 | ENC=0 | DEC=1
+# [MON] Captured output | MODE=ENC | RESULT=bb8d87c589441ca9 | READY=1
+# [SCB][PASS] 718: ENC successful. Result=bb8d87c589441ca9
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [MON] Captured input | MODE=DEC | DATA=cb347968a100aaaa | KEY=74490f166b7456a1 | ENC=0 | DEC=1
+# [DRV] DUT completed operation | MODE=DEC
+# [DRV] Got transaction | MODE=DEC | DATA=7a73250d0f0d963c | KEY=8767830ddf0d2e6e
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [DRV] Driven transaction | MODE=DEC | DATA=7a73250d0f0d963c | KEY=8767830ddf0d2e6e | ENC=0 | DEC=1
+# [MON] Captured output | MODE=DEC | RESULT=56936a36ea57f65b | READY=1
+# [SCB][PASS] 854: DEC successful. Result=56936a36ea57f65b
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [MON] Captured input | MODE=DEC | DATA=7a73250d0f0d963c | KEY=8767830ddf0d2e6e | ENC=0 | DEC=1
+# [DRV] DUT completed operation | MODE=DEC
+# [DRV] Got transaction | MODE=ENC | DATA=230cb163affd2d10 | KEY=153b788ef652d88e
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [DRV] Driven transaction | MODE=ENC | DATA=230cb163affd2d10 | KEY=153b788ef652d88e | ENC=1 | DEC=0
+# [MON] Captured output | MODE=DEC | RESULT=fdf79d61675a0e4d | READY=1
+# [SCB][PASS] 990: DEC successful. Result=fdf79d61675a0e4d
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [MON] Captured input | MODE=ENC | DATA=230cb163affd2d10 | KEY=153b788ef652d88e | ENC=1 | DEC=0
+# [DRV] DUT completed operation | MODE=ENC
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [MON] Captured output | MODE=ENC | RESULT=65709b1395af0e56 | READY=1
+# [SCB][PASS] 1066: ENC successful. Result=65709b1395af0e56
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# ** Note: $finish    : ./TB/env.sv(34)
+#    Time: 1076 ns  Iteration: 1  Instance: /tb_top_des/t1
+# Break in Task std/mailbox::get at C:/questasim64_10.7c/win64/../verilog_src/std/std.sv line 41
+#  coverage save -onexit RANDOM.ucdb
+# 

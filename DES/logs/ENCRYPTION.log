@@ -1,0 +1,41 @@
+# vsim -c -coverage work.tb_top_des -sv_lib des_ref "+TESTNAME=ENCRYPTION" -onfinish final -do "run -all; coverage save -onexit ENCRYPTION.ucdb;" 
+# Start time: 16:13:34 on Jul 20,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.testcase_pkg(fast)
+# Loading work.testbench_sv_unit(fast)
+# Loading work.tb_top_des(fast)
+# Loading work.test(fast)
+# Loading work.des_checker(fast)
+# Loading work.des_if(fast)
+# ** Note: (vsim-7082) For C/C++ auto compile, choosing compiler C:\msys64\ucrt64\bin\gcc.exe set from the PATH environment variable.
+# Loading .\des_ref.dll
+# run -all
+# [TEST] TESTNAME=ENCRYPTION TIMEOUT=2000
+# [ENV] Starting environment...
+# [ENV] Expected transaction count = 1
+# [GEN] Time=0 | MODE=DEC | Data=00123456789abcde | Key=0133457799bbcdff
+# [GEN] Finished generating 1 transactions
+# [DRV] Reset released, starting driver...
+# [DRV] Got transaction | MODE=DEC | DATA=00123456789abcde | KEY=0133457799bbcdff
+# [MON] Reset released, starting monitor...
+# [PASS] ASSERT DES READY
+# [DRV] Driven transaction | MODE=DEC | DATA=00123456789abcde | KEY=0133457799bbcdff | ENC=1 | DEC=0
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [MON] Captured input | MODE=ENC | DATA=00123456789abcde | KEY=0133457799bbcdff | ENC=1 | DEC=0
+# [DRV] DUT completed operation | MODE=DEC
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [MON] Captured output | MODE=ENC | RESULT=1abff69d5a93e80b | READY=1
+# [SCB][PASS] 82: ENC successful. Result=1abff69d5a93e80b
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# ** Note: $finish    : ./TB/env.sv(34)
+#    Time: 92 ns  Iteration: 1  Instance: /tb_top_des/t1
+# Break in Task std/mailbox::get at C:/questasim64_10.7c/win64/../verilog_src/std/std.sv line 41
+#  coverage save -onexit ENCRYPTION.ucdb
+# 

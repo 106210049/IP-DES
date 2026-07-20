@@ -1,0 +1,44 @@
+# Saving coverage database on exit...
+# End time: 16:13:41 on Jul 20,2026, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0
+# vsim -c -coverage work.tb_top_des -sv_lib des_ref "+TESTNAME=DECRYPTION" -onfinish final -do "run -all; coverage save -onexit DECRYPTION.ucdb;" 
+# Start time: 16:13:41 on Jul 20,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.testcase_pkg(fast)
+# Loading work.testbench_sv_unit(fast)
+# Loading work.tb_top_des(fast)
+# Loading work.test(fast)
+# Loading work.des_checker(fast)
+# Loading work.des_if(fast)
+# ** Note: (vsim-7082) For C/C++ auto compile, choosing compiler C:\msys64\ucrt64\bin\gcc.exe set from the PATH environment variable.
+# Loading .\des_ref.dll
+# run -all
+# [TEST] TESTNAME=DECRYPTION TIMEOUT=2000
+# [ENV] Starting environment...
+# [ENV] Expected transaction count = 1
+# [GEN] Time=0 | MODE=ENC | Data=1abff69d5a93e80b | Key=0133457799bbcdff
+# [GEN] Finished generating 1 transactions
+# [DRV] Reset released, starting driver...
+# [DRV] Got transaction | MODE=ENC | DATA=1abff69d5a93e80b | KEY=0133457799bbcdff
+# [MON] Reset released, starting monitor...
+# [PASS] ASSERT DES READY
+# [DRV] Driven transaction | MODE=ENC | DATA=1abff69d5a93e80b | KEY=0133457799bbcdff | ENC=0 | DEC=1
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [MON] Captured input | MODE=DEC | DATA=1abff69d5a93e80b | KEY=0133457799bbcdff | ENC=0 | DEC=1
+# [DRV] DUT completed operation | MODE=ENC
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [MON] Captured output | MODE=DEC | RESULT=00123456789abcde | READY=1
+# [SCB][PASS] 142: DEC successful. Result=00123456789abcde
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# [PASS] ASSERT DES READY
+# ** Note: $finish    : ./TB/env.sv(34)
+#    Time: 152 ns  Iteration: 1  Instance: /tb_top_des/t1
+# Break in Task std/mailbox::get at C:/questasim64_10.7c/win64/../verilog_src/std/std.sv line 41
+#  coverage save -onexit DECRYPTION.ucdb
+# 

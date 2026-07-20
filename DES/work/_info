@@ -1,0 +1,557 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/questasim64_10.7c/examples
+T_opt
+!s110 1784538815
+VY5giFg=Vf5jhQBg2nCZ]Y3
+04 10 4 work tb_top_des fast 0
+=1-d8bbc125b003-6a5de6be-368-3da4
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+Z2 OL;O;10.7c;67
+R0
+T_opt1
+!s110 1784536520
+VQM:m_MabdDoA;GLDES3O:1
+04 11 4 work tb_DES_Cryp fast 0
+=1-d8bbc125b003-6a5dddc8-24c-2ee8
+o-quiet -auto_acc_if_foreign -work work -debugdb
+R1
+n@_opt1
+R2
+R0
+vDES_Algorithm
+Z3 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+Z4 !s110 1784538825
+!i10b 1
+!s100 cddo?SPf3oj;FM@C;NDfE3
+I_gnVB9oBGOmT]WkUQ=cfX3
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 !s105 DES_core_sv_unit
+S1
+Z7 dD:/VLSI/Projects/DES
+Z8 w1784211667
+8.\RTL\DES_Algorithm.sv
+F.\RTL\DES_Algorithm.sv
+L0 5
+Z9 OL;L;10.7c;67
+r1
+!s85 0
+31
+Z10 !s108 1784538825.000000
+!s107 .\TB\des_checker.sv|.\TB\test.sv|.\TB\env.sv|.\TB\agent.sv|.\TB\scoreboard.sv|.\TB\monitor.sv|.\TB\driver.sv|.\TB\generator.sv|.\TB\transaction.sv|.\TB\interface.sv|.\TB\testcase_pkg.sv|.\RTL\DES_Controller.sv|.\RTL\Shifter_Block.sv|.\RTL\PC2.sv|.\RTL\PC1.sv|.\RTL\Key_Schedule.sv|.\RTL\IP_1.sv|.\RTL\Permutation.sv|.\RTL\Sbox.sv|.\RTL\E_table.sv|.\RTL\DES_function.sv|.\RTL\IP.sv|.\RTL\DES_Algorithm.sv|./TB/testbench.sv|./RTL/DES_core.sv|
+Z11 !s90 -reportprogress|300|+cover|./RTL/DES_core.sv|./TB/testbench.sv|
+!i113 0
+Z12 !s102 +cover
+Z13 o+cover -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@d@e@s_@algorithm
+4des_checker
+R3
+Z14 DXx4 work 12 testcase_pkg 0 22 1TTQlQ16BMJDcNW@]lZLW0
+Z15 DXx4 work 17 testbench_sv_unit 0 22 AN2U1=0O3a0H]SYBgU>cS1
+R5
+r1
+!s85 0
+!i10b 1
+!s100 eSmm>4SR<RM[NGB?EX>a?1
+ICk1chl:Vb`zZ3Qn8=Imd<1
+Z16 !s105 testbench_sv_unit
+S1
+R7
+Z17 w1784538792
+8.\TB\des_checker.sv
+Z18 F.\TB\des_checker.sv
+L0 1
+R9
+31
+R10
+Z19 !s107 .\TB\des_checker.sv|.\TB\test.sv|.\TB\env.sv|.\TB\agent.sv|.\TB\scoreboard.sv|.\TB\monitor.sv|.\TB\driver.sv|.\TB\generator.sv|.\TB\transaction.sv|.\TB\interface.sv|.\TB\testcase_pkg.sv|.\RTL\DES_Controller.sv|.\RTL\Shifter_Block.sv|.\RTL\PC2.sv|.\RTL\PC1.sv|.\RTL\Key_Schedule.sv|.\RTL\IP_1.sv|.\RTL\Permutation.sv|.\RTL\Sbox.sv|.\RTL\E_table.sv|.\RTL\DES_function.sv|.\RTL\IP.sv|.\RTL\DES_Algorithm.sv|./TB/testbench.sv|./RTL/DES_core.sv|
+R11
+!i113 0
+R12
+R13
+R1
+vDES_Controller
+R3
+R4
+!i10b 1
+!s100 C<Znf8PQMYUMghX<KXVhg0
+ID3XWTQVBnfLRm3;n0<61Y2
+R5
+R6
+S1
+R7
+R8
+8.\RTL\DES_Controller.sv
+F.\RTL\DES_Controller.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R19
+R11
+!i113 0
+R12
+R13
+R1
+n@d@e@s_@controller
+vDES_core
+R3
+R4
+!i10b 1
+!s100 91OVR=EkAnU9KeMhcZUfO1
+ITL>5Nia3:hT5QLIFK3fQ[3
+R5
+R6
+S1
+R7
+Z20 w1784211656
+8./RTL/DES_core.sv
+F./RTL/DES_core.sv
+L0 5
+R9
+r1
+!s85 0
+31
+R10
+R19
+R11
+!i113 0
+R12
+R13
+R1
+n@d@e@s_core
+vDES_function
+R3
+R4
+!i10b 1
+!s100 iLG>JYidHk5T2QVl;_]L:2
+Ib7N^^0dGJT6_h7l^^9Q7`3
+R5
+R6
+S1
+R7
+R8
+8.\RTL\DES_function.sv
+F.\RTL\DES_function.sv
+L0 4
+R9
+r1
+!s85 0
+31
+R10
+R19
+R11
+!i113 0
+R12
+R13
+R1
+n@d@e@s_function
+Ydes_if
+R3
+R14
+R15
+R5
+r1
+!s85 0
+!i10b 1
+!s100 oSoH5MgQomzm4J>698Ag12
+IC0J^Y7@X`nz?gSOhZL0Gg1
+R16
+S1
+R7
+w1784538057
+8.\TB\interface.sv
+Z21 F.\TB\interface.sv
+L0 1
+R9
+31
+R10
+R19
+R11
+!i113 0
+R12
+R13
+R1
+vE_table
+R3
+R4
+!i10b 1
+!s100 18F;FgIn^GSPXf@EIjI6M0
+ImZ1MLFGN0o;kN0izcoVS[0
+R5
+R6
+S1
+R7
+R20
+8.\RTL\E_table.sv
+F.\RTL\E_table.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R19
+R11
+!i113 0
+R12
+R13
+R1
+n@e_table
+vIP
+R3
+R4
+!i10b 1
+!s100 L3h?dizMFhR_l=SEegXA31
+IW3lPQakRcN6mil96eAT5@0
+R5
+R6
+S1
+R7
+R20
+8.\RTL\IP.sv
+F.\RTL\IP.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R19
+R11
+!i113 0
+R12
+R13
+R1
+n@i@p
+vIP_1
+R3
+R4
+!i10b 1
+!s100 O1glcW4NH?_zhcJOEfLih2
+IXISRgjXdKdHSa1hP]m3SD2
+R5
+R6
+S1
+R7
+R8
+8.\RTL\IP_1.sv
+F.\RTL\IP_1.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R19
+R11
+!i113 0
+R12
+R13
+R1
+n@i@p_1
+vKey_Schedule
+R3
+R4
+!i10b 1
+!s100 6iJbn^`T`eQ<ROUKgD2oW2
+IfV8>`Z6AV5KYFW@EXYg3S1
+R5
+R6
+S1
+R7
+R8
+8.\RTL\Key_Schedule.sv
+F.\RTL\Key_Schedule.sv
+L0 4
+R9
+r1
+!s85 0
+31
+R10
+R19
+R11
+!i113 0
+R12
+R13
+R1
+n@key_@schedule
+vPC1
+R3
+R4
+!i10b 1
+!s100 l]@ZMD0c3Z`?OjO;f5KzE1
+I295Zi1lBPOmanh_6jh3ng2
+R5
+R6
+S1
+R7
+R8
+8.\RTL\PC1.sv
+F.\RTL\PC1.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R19
+R11
+!i113 0
+R12
+R13
+R1
+n@p@c1
+vPC2
+R3
+R4
+!i10b 1
+!s100 G3905j;KXIa[G>@jfl>g02
+IoddLCFn;]eoiK0]1=`lRT1
+R5
+R6
+S1
+R7
+R8
+8.\RTL\PC2.sv
+F.\RTL\PC2.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R19
+R11
+!i113 0
+R12
+R13
+R1
+n@p@c2
+vPermutation
+R3
+R4
+!i10b 1
+!s100 fWaRBoC@`6cNUAQ@^O[4Y2
+IPFY:ZKmZPU_TFC[BO]mFH2
+R5
+R6
+S1
+R7
+R20
+8.\RTL\Permutation.sv
+F.\RTL\Permutation.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R19
+R11
+!i113 0
+R12
+R13
+R1
+n@permutation
+vSbox
+R3
+R4
+!i10b 1
+!s100 a:k7n_BcW0Rj3V^k;R_E93
+I;N@M5431Ln2o:9MAZ>o0n3
+R5
+R6
+S1
+R7
+R8
+8.\RTL\Sbox.sv
+F.\RTL\Sbox.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R19
+R11
+!i113 0
+R12
+R13
+R1
+n@sbox
+vShifter_Block
+R3
+R4
+!i10b 1
+!s100 M?dSNLzg?h^L8mnAQNdmK3
+IJEBBn@cLNSnPa6m>ckNH_0
+R5
+R6
+S1
+R7
+R8
+8.\RTL\Shifter_Block.sv
+F.\RTL\Shifter_Block.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R19
+R11
+!i113 0
+R12
+R13
+R1
+n@shifter_@block
+vtb_DES_Cryp
+R3
+!s110 1784536488
+!i10b 1
+!s100 1d0RLgl^FYZF2jW_YEi4h0
+IR;J3fXjcVgfoJ?eRIW`b[0
+R5
+R16
+S1
+R7
+w1784536380
+Z22 8./TB/testbench.sv
+Z23 F./TB/testbench.sv
+L0 65
+R9
+r1
+!s85 0
+31
+!s108 1784536488.000000
+!s107 .\RTL\DES_Controller.sv|.\RTL\Shifter_Block.sv|.\RTL\PC2.sv|.\RTL\PC1.sv|.\RTL\Key_Schedule.sv|.\RTL\IP_1.sv|.\RTL\Permutation.sv|.\RTL\Sbox.sv|.\RTL\E_table.sv|.\RTL\DES_function.sv|.\RTL\IP.sv|.\RTL\DES_Algorithm.sv|./TB/testbench.sv|./RTL/DES_core.sv|
+!s90 -reportprogress|300|./RTL/DES_core.sv|./TB/testbench.sv|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+ntb_@d@e@s_@cryp
+vtb_top_des
+R3
+R14
+R15
+R5
+r1
+!s85 0
+!i10b 1
+!s100 ^f;L2fXFg@=1FT]NnRfJg3
+IB7nA=_haU>zKTWbc8R][?2
+R16
+S1
+R7
+w1784538146
+R22
+R23
+L0 22
+R9
+31
+R10
+R19
+R11
+!i113 0
+R12
+R13
+R1
+4test
+R3
+R14
+R15
+R5
+r1
+!s85 0
+!i10b 1
+!s100 `O3liJl3bMV6XoVV?nH;N2
+IA^NHkJUFaERZz70Eo^lET3
+R16
+S1
+R7
+w1784537066
+8.\TB\test.sv
+Z24 F.\TB\test.sv
+L0 1
+R9
+31
+R10
+R19
+R11
+!i113 0
+R12
+R13
+R1
+Xtestbench_sv_unit
+!s115 des_if
+R3
+R14
+VAN2U1=0O3a0H]SYBgU>cS1
+r1
+!s85 0
+!i10b 1
+!s100 Tmh?Rj6]OH3C[m6Fe42OD2
+IAN2U1=0O3a0H]SYBgU>cS1
+!i103 1
+S1
+R7
+R17
+R22
+R23
+Z25 F.\TB\testcase_pkg.sv
+R21
+F.\TB\transaction.sv
+F.\TB\generator.sv
+F.\TB\driver.sv
+F.\TB\monitor.sv
+F.\TB\scoreboard.sv
+F.\TB\agent.sv
+F.\TB\env.sv
+R24
+R18
+L0 1
+R9
+31
+R10
+R19
+R11
+!i113 0
+R12
+R13
+R1
+Xtestcase_pkg
+R3
+V1TTQlQ16BMJDcNW@]lZLW0
+r1
+!s85 0
+!i10b 1
+!s100 O18`PB73K4PPj^:6K@IO@2
+I1TTQlQ16BMJDcNW@]lZLW0
+S1
+R7
+w1784534332
+8.\TB\testcase_pkg.sv
+R25
+L0 1
+R9
+31
+R10
+R19
+R11
+!i113 0
+R12
+R13
+R1

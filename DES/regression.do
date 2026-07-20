@@ -3,11 +3,14 @@
 
 # Compile DPI-C nếu có
 if {[file exists ./TB/des_ref.c]} {
-
+    file delete -force build/des_ref.dll
+    file delete -force build/des_ref.o
     # Đường dẫn gcc, chỉnh lại nếu khác
     set gcc "C:/msys64/ucrt64/bin/gcc.exe"
-    exec "C:/msys64/ucrt64/bin/gcc.exe" -c -fPIC ./TB/des_ref.c -o des_ref.o
-    exec "C:/msys64/ucrt64/bin/gcc.exe" -shared -o des_ref.dll des_ref.o
+    file mkdir build
+   
+    exec "C:/msys64/ucrt64/bin/gcc.exe" -c -fPIC ./TB/des_ref.c -o build/des_ref.o
+    exec "C:/msys64/ucrt64/bin/gcc.exe" -shared -o build/des_ref.dll build/des_ref.o
 }
 
 # Dọn dẹp logs cũ
@@ -36,9 +39,9 @@ foreach t $TESTS {
     transcript file logs/$t.log
 
     # Chạy mô phỏng với hoặc không có thư viện DPI
-    if {[file exists des_ref.dll]} {
+    if {[file exists build/des_ref.dll]} {
         vsim -c -coverage work.tb_top_des \
-             -sv_lib des_ref \
+             -sv_lib build/des_ref \
              +TESTNAME=$t \
              -onfinish final \
              -do "run -all; coverage save -onexit $t.ucdb;"

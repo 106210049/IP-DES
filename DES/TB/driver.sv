@@ -1,3 +1,4 @@
+import testcase_pkg::*;
 class driver;
 
   virtual des_if vif;
@@ -5,7 +6,6 @@ class driver;
   mailbox gen_to_drv;
 
   transaction tr;
-
   function new(
     mailbox gen_to_drv,
     virtual des_if vif
@@ -22,7 +22,14 @@ class driver;
     vif.des_key_in      <= 64'd0;
   endtask
 
-
+  task mid_reset();
+    #5;
+    $display("Assert Reset");
+    vif.rst_n <= 1'b0;
+    #5;
+    $display("Dessert Reset");
+    vif.rst_n <= 1'b0;
+  endtask
   task run();
 
     wait(vif.rst_n === 1'b1);
@@ -72,7 +79,6 @@ class driver;
 
       // Đợi DUT bắt đầu bận
       wait(vif.desc_ready === 1'b0);
-
       // Đợi DUT hoàn thành
       wait(vif.desc_ready === 1'b1);
 

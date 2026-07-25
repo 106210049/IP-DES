@@ -7,6 +7,7 @@ import "DPI-C" function longint unsigned des_decrypt_ref(
   input longint unsigned data,
   input longint unsigned key
 );
+
 `include "testcase_pkg.sv"
 `include "interface.sv"
 `include "transaction.sv"

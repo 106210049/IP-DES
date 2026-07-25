@@ -1,6 +1,6 @@
-# vsim -c -coverage work.tb_top_des -sv_lib des_ref "+TESTNAME=ENCRYPTION" -onfinish final -do "run -all; coverage save -onexit ENCRYPTION.ucdb;" 
-# Start time: 16:13:34 on Jul 20,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# vsim -c -coverage work.tb_top_des -sv_lib build/des_ref "+TESTNAME=ENCRYPTION" -onfinish final -do "run -all; coverage save -onexit ENCRYPTION.ucdb;" 
+# Start time: 18:04:12 on Jul 20,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading sv_std.std
 # Loading work.testcase_pkg(fast)
 # Loading work.testbench_sv_unit(fast)
@@ -9,7 +9,7 @@
 # Loading work.des_checker(fast)
 # Loading work.des_if(fast)
 # ** Note: (vsim-7082) For C/C++ auto compile, choosing compiler C:\msys64\ucrt64\bin\gcc.exe set from the PATH environment variable.
-# Loading .\des_ref.dll
+# Loading .\build/des_ref.dll
 # run -all
 # [TEST] TESTNAME=ENCRYPTION TIMEOUT=2000
 # [ENV] Starting environment...

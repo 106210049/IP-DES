@@ -8,8 +8,8 @@ from collections import Counter
 # Config
 # =========================================
 LOG_DIR  = "logs/*.log"
-CSV_OUT  = "des_report.csv"
-HTML_OUT = "des_report.html"
+CSV_OUT  = "DES_report.csv"
+HTML_OUT = "DES_report.html"
 
 # =========================================
 # Regex patterns
@@ -22,7 +22,10 @@ RE_COVER  = re.compile(r"\[COVER\]")
 # Scoreboard
 RE_SCB_PASS = re.compile(r"\[SCB\]\[PASS\]")
 RE_SCB_FAIL = re.compile(r"\[SCB\]\[FAIL\]|\[SCB\]\[ERR\]")
-
+RE_SVA_PASS = re.compile(r"\[SVA\]\[PASS\]")
+RE_SVA_FAIL = re.compile(r"\[SVA\]\[FAIL\]")
+RE_SVA_WARN = re.compile(r"\[SVA\]\[WARN\]")
+RE_SVA_COVER = re.compile(r"\[SVA\]\[COVER\]")
 # Assertion fail message
 RE_ASSERT_FAIL = re.compile(r"ASSERT_([A-Z0-9_]+).*?failed", re.MULTILINE)
 
@@ -35,10 +38,10 @@ def parse_log(path):
 
     testname = os.path.basename(path).replace(".log", "")
 
-    sva_pass  = len(RE_PASS.findall(content))
-    sva_fail  = len(RE_FAIL.findall(content))
-    sva_warn  = len(RE_WARN.findall(content))
-    cover_cnt = len(RE_COVER.findall(content))
+    sva_pass  = len(RE_SVA_PASS.findall(content))
+    sva_fail  = len(RE_SVA_FAIL.findall(content))
+    sva_warn  = len(RE_SVA_WARN.findall(content))
+    cover_cnt = len(RE_SVA_COVER.findall(content))
 
     scb_pass  = len(RE_SCB_PASS.findall(content))
     scb_fail  = len(RE_SCB_FAIL.findall(content))

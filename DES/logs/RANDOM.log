@@ -1,8 +1,8 @@
 # Saving coverage database on exit...
-# End time: 16:13:46 on Jul 20,2026, Elapsed time: 0:00:05
+# End time: 18:04:24 on Jul 20,2026, Elapsed time: 0:00:05
 # Errors: 0, Warnings: 0
-# vsim -c -coverage work.tb_top_des -sv_lib des_ref "+TESTNAME=RANDOM" -onfinish final -do "run -all; coverage save -onexit RANDOM.ucdb;" 
-# Start time: 16:13:46 on Jul 20,2026
+# vsim -c -coverage work.tb_top_des -sv_lib build/des_ref "+TESTNAME=RANDOM" -onfinish final -do "run -all; coverage save -onexit RANDOM.ucdb;" 
+# Start time: 18:04:24 on Jul 20,2026
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading sv_std.std
 # Loading work.testcase_pkg(fast)
@@ -12,7 +12,7 @@
 # Loading work.des_checker(fast)
 # Loading work.des_if(fast)
 # ** Note: (vsim-7082) For C/C++ auto compile, choosing compiler C:\msys64\ucrt64\bin\gcc.exe set from the PATH environment variable.
-# Loading .\des_ref.dll
+# Loading .\build/des_ref.dll
 # run -all
 # [TEST] TESTNAME=RANDOM TIMEOUT=2000
 # [ENV] Starting environment...

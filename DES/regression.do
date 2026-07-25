@@ -63,3 +63,4 @@ if {[file exists all_tests.ucdb]} {
 } else {
     puts "Không tìm thấy file all_tests.ucdb để tạo báo cáo coverage!"
 }
+exit

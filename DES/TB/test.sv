@@ -31,7 +31,9 @@ program test(des_if vif);
     endcase
 
     env_o.run();
-    #(timeout);
+    // #(timeout);
+    wait (env_o.scb.compare_cnt >= env_o.agt.gen.num_gen);
+    #10;
     //----------------------------------------
     // Report + Finish
     //----------------------------------------

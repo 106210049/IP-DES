@@ -64,7 +64,7 @@ class scoreboard;
 
         fail_cnt++;
 
-        $display("[SCB][ERROR] %0t: Mismatch!", $time);
+        $display("[SCB][FAIL] %0t: Mismatch!", $time);
         $display("  Compare ID : %0d", compare_cnt);
         $display("  Mode       : %s", enc_mode ? "ENC" : "DEC");
         $display("  Data       : %016h", tr.des_data);
@@ -77,10 +77,13 @@ class scoreboard;
 
         pass_cnt++;
 
-        $display("[SCB][PASS] %0t: %s successful. Result=%016h",
-                 $time,
-                 enc_mode ? "ENC" : "DEC",
-                 tr.desc_result);
+        $display("[SCB][PASS] %0t: Match!", $time);
+        $display("  Compare ID : %0d", compare_cnt);
+        $display("  Mode       : %s", enc_mode ? "ENC" : "DEC");
+        $display("  Data       : %016h", tr.des_data);
+        $display("  Key        : %016h", tr.des_key_in);
+        $display("  DUT_out    : %016h", tr.desc_result);
+        $display("  REF_out    : %016h", exp_result);
 
       end
 

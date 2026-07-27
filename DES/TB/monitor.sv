@@ -42,7 +42,7 @@ class monitor;
           tr.mode_type = "DEC";
         else
           tr.mode_type = "UNKNOWN";
-
+        tr.coverage_sample();
         $display("[MON] Captured input | MODE=%s | DATA=%016h | KEY=%016h | ENC=%0b | DEC=%0b",
                  tr.mode_type,
                  tr.des_data,

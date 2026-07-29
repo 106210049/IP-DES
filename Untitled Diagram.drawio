@@ -1787,7 +1787,7 @@
             <mxPoint x="520" y="140" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3REG6W5nXiLGLglHO5_M-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="DES Algorithm Block" vertex="1">
+        <mxCell id="3REG6W5nXiLGLglHO5_M-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="DES Algorithm Block" vertex="1">
           <mxGeometry height="200" width="120" x="320" y="40" as="geometry" />
         </mxCell>
         <mxCell id="3REG6W5nXiLGLglHO5_M-2" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
@@ -1851,7 +1851,7 @@
             <mxPoint x="480" y="374" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="XsC6tJiPUVtQ3jRIteMI-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" value="IP block" vertex="1">
+        <mxCell id="XsC6tJiPUVtQ3jRIteMI-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;fontStyle=1" value="IP block" vertex="1">
           <mxGeometry height="125" width="120" x="305" y="280" as="geometry" />
         </mxCell>
         <mxCell id="AgQYhaSgOSr5JQr-oz8E-1" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
@@ -1874,7 +1874,7 @@
             <mxPoint x="520" y="480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ZBHj5Mw97t-Hc8t3EG_e-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" value="DES function" vertex="1">
+        <mxCell id="ZBHj5Mw97t-Hc8t3EG_e-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;fontStyle=1" value="DES function" vertex="1">
           <mxGeometry height="80" width="120" x="320" y="440" as="geometry" />
         </mxCell>
         <mxCell id="ZBHj5Mw97t-Hc8t3EG_e-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="r_input[31:0]" vertex="1">
@@ -1954,7 +1954,7 @@
             <mxPoint x="840" y="420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Y8M36NTAXsCkix88Crkr-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" value="IP_1 block" vertex="1">
+        <mxCell id="Y8M36NTAXsCkix88Crkr-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;fontStyle=1" value="IP_1 block" vertex="1">
           <mxGeometry height="200" width="80" x="640" y="320" as="geometry" />
         </mxCell>
         <mxCell id="zz5lcekljIpVjWaO4XCc-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="l_input[31:0]" vertex="1">
